@@ -12,7 +12,8 @@ name: Build OpenWrt
 
 # 👇 添加这两行，赋予 GITHUB_TOKEN 创建 Release 的写入权限
 permissions:
-  contents: write
+  contents: write     # 👈 新增这一行，允许删除旧 workflow run 记录（解决这个报错的关键）
+  contents: write     # 👈 新增这一行，允许创建 Release、上传固件
 # 👆 添加这两行
 
 on:
