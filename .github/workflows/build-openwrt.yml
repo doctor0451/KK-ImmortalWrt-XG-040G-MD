@@ -10,6 +10,11 @@
 
 name: Build OpenWrt
 
+# 👇 添加这两行，赋予 GITHUB_TOKEN 创建 Release 的写入权限
+permissions:
+  contents: write
+# 👆 添加这两行
+
 on:
   repository_dispatch:
   workflow_dispatch:
